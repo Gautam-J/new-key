@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
+    'sale.apps.SaleConfig',
     'crispy_forms'
 ]
 
@@ -134,6 +135,6 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'LoginView'
-LOGIN_REDIRECT_URL = 'HomeView'
+LOGIN_REDIRECT_URL = 'PostListView'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

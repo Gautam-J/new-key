@@ -21,7 +21,8 @@
         <a href="{% url 'HomeView' %}">NewKey</a>
       </div>
       {%  if user.is_authenticated %}
-        <!-- <a class="nav-item nav-link" href="">New Post</a> -->
+        <a class="nav-item nav-link" href="{% url 'PostCreateView' %}">New Post</a>
+        <a class="nav-item nav-link" href="{% url 'PostListView' %}">View Sales</a>
         <a class="nav-item nav-link" href="{% url 'LogoutView' %}">Logout</a>
       {% else %}
         <a class="nav-item nav-link" href="{% url 'LoginView' %}">Login</a>
